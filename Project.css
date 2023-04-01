@@ -1,0 +1,449 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:'popins',sans-serif;
+    box-sizing: border-box;
+    
+}
+body
+{
+    background: #efefef;
+}
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1876f2;
+    padding: 5px 5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.log
+{
+    width: 160px;
+    margin-left: 45px;
+    
+}
+.nav-left
+{
+    display: flex;
+    align-items: center;
+    
+}
+.nav-left ul li
+{
+    list-style: none;
+    display: inline-block;
+}
+.nav-left ul li img
+{
+    width: 28px;
+    margin: 0px 15px;
+}
+.nav-user-icon
+{
+    margin-left: 30px;
+    padding-top: 10px;
+}
+.nav-user-icon img
+{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-box
+{
+    background: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    margin-left: 700px;
+    
+}
+.search-box img
+{
+    width: 18px;
+}
+.search-box input
+{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+.online
+{
+    position: relative;
+}
+.online::after
+{
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #41db51;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.user-cover
+{
+ max-width: 1100px;
+ width: 100%;
+ margin: 0 auto;
+ height: 270px;
+ position: relative;
+ display: block;
+ z-index: 1;
+ overflow: hidden;
+ margin-top: 5px;
+ max-height: 100%;
+}
+
+.user-cover img
+{
+ width: 100%;
+ height: auto;
+ position: absolute;
+ top:0px;
+ border-radius: 5px;
+
+}
+
+
+.user-profilepic
+{
+    width:73%;
+    height: 120px;
+    position: relative;
+    display: flex;
+    margin-top:10px;
+    margin-left:210px;
+    background-color:white;
+    justify-content: space-between;
+    
+}
+.user-profilepic img
+{
+    width:100px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left:20px;
+    
+  
+}
+.name
+{
+    margin-left:-390px;
+    margin-top: 25px;
+}
+
+.name h3
+{  
+   font-size: 25px;
+    font-weight: 600;
+
+    
+
+}
+.name p
+{
+  font-size: 13px;
+    margin-left:10px;
+    
+    
+}
+.members img
+{
+    width:23px;
+    border-radius: 50%;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 20px;
+}
+.user-profilepic button{
+    background: #1876f2;
+    border: 0;
+    outline: 0;
+    width:100px;
+    height: 30px;
+    display:inline-flex;
+    justify-content: space-between;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-right:-10px;
+    margin-left: -100px;
+    cursor: pointer;
+    
+    
+}
+.user-profilepic button img
+{
+    height: 8px;
+    margin-right:10px;
+    width: 50%;
+
+}
+.user-profilepic button:first-child
+{
+    background: #e4e6eb;
+    color: #000;
+}
+
+
+
+.write-post-container
+{
+    margin-top:-1080px;
+    width:50%;
+    background:#fff;
+    border-radius:10px;
+    padding: 20px;
+    color:#626262;
+    margin-left:550px;
+    height:200px;
+
+    
+    
+}
+.user-profile
+{
+    display: flex;
+    align-items: center;
+}
+.user-profile img
+{
+    width:45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+.user-profile p
+{
+    margin-bottom: -5px;
+    font-weight: 500;
+    color:#626262;   
+}
+.user-profile small
+{
+    font-size: 12px;
+}
+.post-input-container
+{
+    padding-left: 55px;
+    padding-top: 10px;
+    
+
+    
+}
+.post-input-container textarea
+{
+    width: 100%;
+    border:0;
+    outline:0;
+    border-bottom:1px solid #ccc;
+    background: transparent;
+    resize: none;
+}
+.add-post-links
+{
+  display: flex;
+    margin-top: 10px;
+}
+.add-post-link a
+{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin-right: 30px;
+    font-size: 13px;
+}
+.add-post-links a img
+{
+    width:20px;
+    margin-right: 10px;
+    
+}
+.post-container
+{
+    width: 50%;
+    background: #fff;
+    border-right: 6px;
+    padding:20px;
+    color: #626262;
+    margin:20px,0;
+    border-radius: 6px;
+    margin-left:550px;
+    margin-top: 15px;
+    
+    
+        
+}
+.post-container span
+{
+    font-size: 13px;
+    color: #9a9a9a;
+}
+.post-text
+{
+color: #9a9a9a;
+margin: 15px 0;
+font-size: 15px
+}
+.post-text span
+{
+    color: #626262;
+    font-weight: 700;
+}
+.post-text a
+{
+    color: #1876f2;
+    text-decoration:none;
+}
+.post-img
+{
+    width:95%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+.post-row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.activity-icons div
+{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 40px;
+    
+}
+.activity-icons div img
+{
+    width: 18px;
+    margin-right: 10px;
+ 
+}
+.post-profile-icons
+{
+    display: flex;
+    align-items: center;
+    
+}
+.post-profile-icons img
+{
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.intro
+{
+    
+    width: 21%;
+    background: #fff;
+    border-right:50px;
+    padding:20px;
+    color: #626262;
+    border-radius: 6px;
+    margin-left:210px;
+    margin-top: 15px;
+    height: 350px;
+}
+.intro h3
+{
+    font-weight: 600;
+    
+ 
+
+}
+.intro-bio
+{
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 13px;
+    font-size: 15px;
+    
+    border-bottom: 1px solid #ccc;
+}
+.intro-bio img
+{
+    width: 15px;
+    margin-bottom: -3px;
+}
+.intro-bio hr
+{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 24px 0;
+}
+
+.intro ul li
+{
+    list-style:none;
+    font-size: 16px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;   
+}
+
+.intro ul li img
+{
+    width: 26px;
+    margin-right: 10px;
+}
+.title
+{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title a
+{
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 14px;
+}
+.photo-box
+{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+.photo-box div img
+{
+    width: 100%;
+    cursor: pointer;
+}
+.intro p
+{
+    font-size: 14px;
+}
+.friends-box
+{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 10px;
+    margin-top:5px;
+}
+.friends-box div img
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+
